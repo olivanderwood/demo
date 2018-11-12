@@ -1,0 +1,14 @@
+{% extends "pages/base.html" %}
+
+{% block title  %} {{post.title}} {% endblock  %}
+
+{% block content  %}
+    <div >
+        <a href='/blog/{{post.id}}'> <h1>{{post.title}} </h1></a>
+        <br>
+        <h6>on {{post.date}}</h6>  
+        <br>
+        <br>
+        {{post.body|safe|linebreaks}}
+    </div> 
+{% endblock  %}
