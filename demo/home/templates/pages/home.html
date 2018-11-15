@@ -11,6 +11,7 @@
 
     <script type="text/javascript" src=" {% static 'js/bootstrap2.js' %} "></script>
     <link rel="stylesheet" href=" {% static 'css/bootstrap2.css'%} " type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
 
 
     <title>  {% block title  %} {% endblock  %} </title>
@@ -18,11 +19,13 @@
 </head>
 <body>
      <div id="logo2">
-       <div class="row">
-           <div class="col-md-8 push-md-3">
-            <a href="/home"><img src="{% static 'images/logo2.png' %}" alt=""></a>
-            </div>
-        </div>
+       <div class="container">
+          <div class="row">
+              <div class="col-md-8 push-md-2 ">
+               <center><a href="/home"><img src="{% static 'images/logo2.png' %}" alt=""></a></center>
+               </div>
+           </div>
+       </div>
     </div>
      
 
@@ -55,7 +58,14 @@
       </div>
     </div>
   </div>
-
+<center><hr style="border: 0.5px solid black; margin-top:50px; margin-bottom:30px; width: 70%; "></center>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+        <center><p style="font-weight:bold; font-size:48px; margin-bottom:100px;font-family: 'Black Ops One', cursive;">"BECOME GAMER, BECOME PROFESSOR"</p></center>
+    </div>
+  </div>
+</div>
 
 <div id="option2">
   <div class="container">
@@ -100,21 +110,42 @@
                         <center>
                           <img src="{%static 'images/logolearn.png'%}" >
                           <h2 class="card-title">Learn</h2>
-                          
                         </center>
                       </div>
                     </div>
                   </div>
                </a>                    
             </div>
-
-         
       </div>
+   </div>  
+   <div class="row">
+      <div class="col-md-12">
+        <a href="/faqs" style="text-decoration:none">
+            <div id="faq">
+                <p>Faqs</p>
+              </div>
+        </a>
+      </div>
+   </div>
+   
+</div>
+</div>
 
-      
-    </div>  
-</div>
-</div>
+<footer>
+    <div id="foot">
+      <div class="row">
+        <div class="col-md-3">
+          <p style="font-weight:bold; font-size: 25px">Liên Hệ: </p>
+          <p>Email: abcxyz@gmail.com</p>
+          <p>Phone Number: 0123456789</p>
+          <p></p>
+        </div>
+        <div class="col-md-4">
+          <p style="font-weight:bold; font-size: 25px">Facebook:</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>

@@ -3,6 +3,39 @@
     padding: 0;
 }
 
+#faq {
+
+    text-align: center;
+    height: 50px;
+    border-radius: 25px;
+    background: rgba(0,0,0,.5);
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+#faq:hover{
+    animation: vibrate 0.30s forwards;
+    background: black;
+    color:white;
+}
+
+@-webkit-keyframes vibrate{
+    0%{
+        transform:translateX(0);
+    }
+    35%{
+        transform:translateX(5px);
+    }
+    70%{
+        transform:translate(-10px);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+
 #foot .row .col-md-4 {
     margin-top: 20px;
 }
@@ -38,42 +71,42 @@
 #option2 .container .row #cardtit1{
     width:100%;
     height:100%;
-    background: #d8882e
+    background: #00ace9
    
 }
 
 #option2 .container .row #cardtit1:hover{
     transition:0.5s;
-    background: #5482ac;
+    background: #f6f6e8;
 }
 
 #option2 .container .row #cardtit2{
     width:100%;
     height:100%;
-    background: #bb17ba
+    background: #d43f3f;
    
 }
 
 #option2 .container .row #cardtit2:hover{
     transition:0.5s;
-    background: #5482ac;
+    background: #f6f6e8;
 }
 
 #option2 .container .row #cardtit3{
     width:100%;
     height:100%;
-    background: #63493f
+    background: #6a9a1f
    
 }
 
 #option2 .container .row #cardtit3:hover{
     transition:0.5s;
-    background: #5482ac;
+    background: #f6f6e8;
 }
 
 #option2 .container .row .card:hover{
     transform: translateY(-3%);
-    background: #5482ac;
+    background: #f6f6e8;
     
 } 
 
@@ -248,7 +281,7 @@ form {
 
 #logo2 img {
     height: 250px;
-    width: 70%;
+    width: 100%;
 }
 
 div#logo2 {
