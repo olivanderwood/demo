@@ -1,16 +1,20 @@
+
+
 {% extends "pages/base.html" %}
 
 {% block title  %}Games {% endblock  %}
 
 {% block content %}
-
+<center><hr style="width: 1120px; border-width: 1px; border-color: black; margin:100px 0px 80px 0px;"></center>
 <div class="container">
         <div class="row">
             <div class="col-md-5 push-md-3 ">
                 <div id="search">
                     <form method="GET" action=" ">
-                        <input type="text" name="q" placeholder="Search" value=" {{request.GET.q}} ">
-                        <input type="submit" value="Find">
+                        <input type="text" name="q" placeholder="Search" value="{{request.GET.q}}">
+                        <button type="submit" class="btn btn-info">
+                            <span class="glyphicon glyphicon-search"></span> 
+                          </button>
                     </form>
                 </div>
             </div>
@@ -18,7 +22,6 @@
         </div>
 {%for post in Posts %}
 <div class="col-md-4">
-  
         <div class="card" >
             {% if post.image %}
                 <a href=" /blog/{{post.id}} "><img class="card-img-top" src="{{ post.image.url}} " style="width: 348px; height:196px" ></a>

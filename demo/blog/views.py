@@ -7,7 +7,7 @@ def list( request ):
     queryset_list=Post.objects.all()
     query = request.GET.get("q")
     if query:
-        queryset_list=queryset_list.filter(Q(title__icontains=query)) 
+        queryset_list=queryset_list.filter(Q(title__icontains=query.strip())) 
 
     data = {'Posts': queryset_list.order_by("-date")}
     return render (request, 'blog/blog.html', data)

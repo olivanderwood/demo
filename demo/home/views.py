@@ -13,3 +13,4 @@ def learn(request):
     return render(request, 'pages/learn.html')
 def faqs(request):
     return render(request, 'pages/faqs.html')
+
