@@ -23,18 +23,23 @@
 </head>
 <body>
      <div id="top">
-      <div id="logo">
-          <a href="/home"><img style="height:130px; width:250px; margin-left:10px" src="{% static 'images/logo.jpg' %}" alt=""></a>
-      </div>
+     
       <div class="container">
         <div class="row">
-            <div class="col-md-10 offset-md-1 ">
+            <div class="col-md-12 ">
                <div id="option">
                     <ul>
+                      <ul id="log1">
                         <a href="/blog"> <li> GAMES </li> </a>
                         <a href="/movie"> <li>MOVIE</li> </a>
-                        <a href="/learn"> <li>LEARN</li> </a>
+                    </ul>
+                    <div id="logo">
+                      <a href="/home"><img style="height:170px; width:290px;" src="{% static 'images/logo.png' %}" alt=""></a>
+                    </div>
+                    <ul id="log2">
+                      <a href="/learn"> <li>LEARN</li> </a>
                         <a href="/faqs"> <li>FAQS</li> </a>
+                    </ul>
                     </ul>
                 </div>
             </div>

@@ -14,17 +14,25 @@
 </div>
 
 <div class="container">
-    <hr style="width: 1120px; border-width: 1px; border-color: black;margin-bottom:150px; margin-top:50px ">
+    <hr style="width: 1120px; border-width: 1px; border-color: black;margin-bottom:100px; margin-top:50px ">
 </div> 
 <div class="container">
         <div class="row">
             <div class="col-md-5 push-md-3 ">
                 <div id="search">
-                    <form method="GET" action=" ">
-                        <input type="text" name="q" placeholder="Search" value="{{request.GET.q}}">
-                        <button type="submit" class="btn btn-info">
-                            <span class="glyphicon glyphicon-search"></span> 
-                          </button>
+                    <form method="GET" action=" ">                  
+                        <input type="text" name="q" placeholder="Search" value="{{request.GET.q}}" class="spot" >                       
+                        <div class="svg-wrapper">
+                            <svg height="50px" width="50px">
+                                <rect id="shape" height="50px" width="50px" />
+                            <div id="text">
+                                <button type="submit" class="btn btn-info">
+                                    <span class="glyphicon glyphicon-search"></span> 
+                                </button>
+                            </div>
+                            </svg>
+                        </div>
+
                     </form>
                 </div>
             </div>
