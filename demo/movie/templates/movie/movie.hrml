@@ -1,0 +1,58 @@
+
+{% extends "pages/base.html" %}
+
+{% block title  %}Games {% endblock  %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+    <div class="col-md-12">
+        <center><p style="font-weight:bold; font-size:48px; margin-bottom:100px;font-family: 'Black Ops One', cursive;">"BECOME GAMER, BECOME PROFESSOR"</p></center>
+    </div>
+    </div>
+</div>
+
+<div class="container">
+    <hr style="width: 1120px; border-width: 1px; border-color: black;margin-bottom:100px; margin-top:50px ">
+</div> 
+<div class="container">
+        <div class="row">
+            <div class="col-md-5 push-md-3 ">
+                <div id="search">
+                    <form method="GET" action=" ">                  
+                        <input type="text" name="q" placeholder="Search" value="{{request.GET.q}}" class="spot" >                       
+                        <div class="svg-wrapper">
+                            <svg height="50px" width="50px">
+                                <rect id="shape" height="50px" width="50px" />
+                            <div id="text">
+                                <button type="submit" class="btn btn-info">
+                                    <span class="glyphicon glyphicon-search"></span> 
+                                </button>
+                            </div>
+                            </svg>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+<!-- {%for post in Posts %}
+<div class="col-md-4">
+        <div class="card" >
+            {% if post.image %}
+                <a href=" /blog/{{post.id}} "><img class="card-img-top" src="{{ post.image.url}} " style="width: 348px; height:196px" ></a>
+            {% endif %}
+            <div id="size">
+                <p> {{post.sizes}} </p>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title"> <a href=" /blog/{{post.id}} "> {{post.title}} </a></h4>
+                <p class="card-text"> {{post.date|date:"d-m-Y"}} </p>
+            </div>
+        </div>
+  
+</div>
+{% endfor %}     -->    
+{% endblock %}
