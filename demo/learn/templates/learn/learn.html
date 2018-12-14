@@ -1,7 +1,7 @@
 
 {% extends "pages/base.html" %}
 
-{% block title  %}Movie {% endblock  %}
+{% block title  %} Learn {% endblock  %}
 
 {% block content %}
 
@@ -16,7 +16,7 @@
 <div class="container">
     <hr style="width: 1120px; border-width: 1px; border-color: black;margin-bottom:100px; margin-top:50px ">
 </div> 
-<div class="container">
+<!-- {% comment %} <div class="container">
         <div class="row">
             <div class="col-md-5 push-md-3 ">
                 <div id="search">
@@ -37,23 +37,24 @@
                 </div>
             </div>
         </div>
-</div> 
-{%for post in Post %}
-<div class="col-md-4">
-        <div class="card" >
-            {% if post.image %}
-                <a href=" /movie/{{post.id}} "><img class="card-img-top" src="{{ post.image.url}} " style="width: 348px; height:196px" ></a>
-            {% endif %}
-           
-        <div class="card-body">
-               <center> <h4 class="card-title"> <a href=" /movie/{{post.id}} "> {{post.title}} </a></h4></center>
-            <div id="time">
-                <p>Thời lượng: {{post.time}} </p>
-            </div>
-                <p class="card-text"> {{post.date|date:"d-m-Y"}} </p>
-            </div>
-        </div>
-  
-</div>
-{% endfor %}         
+ </div> {% endcomment %} -->
+{%for post in Posts %}
+
+    <div class="col-md-12">
+       <div id="k1">
+            <span>
+                <h4> {{post.title}} </h4>
+                <div id="nani">
+                    <i class="fas fa-angle-down"></i>
+                    <span>
+                        <div id="k2">
+                            <p> {{post.link}} </p>
+                        </div>
+                    </span>
+                </div>
+            </span>
+       </div>
+    </div>
+
+{% endfor %}    
 {% endblock %}

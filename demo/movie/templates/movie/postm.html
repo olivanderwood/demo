@@ -53,15 +53,17 @@
 
 
 <div id="conte">
-    <div id="tit">
-        <a href='/blog/{{post.id}}' > <h1>{{post.title}} </h1></a>
+    <div id="tit2">
+        <a href='/movie/{{post.id}}' > <h1>{{post.title}} </h1></a>
         <br>
         <h6>on {{post.date}}</h6>  
+       
     </div>
   <div class="container">
     <div class="row">
       {% block content %}
       <div >
+        <img src="{{ post.bgm.url}}" style="height: 500px; width: 800px;">
         <br>
         <br>
         {{post.body|safe|linebreaks}}

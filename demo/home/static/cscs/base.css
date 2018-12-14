@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+#k1 h4 {
+    font-size: 23px;
+    float:left;
+    color: #fae610;
+}
+
 button.btn.btn-info {
     margin-top: -66px;
 }
@@ -259,6 +265,45 @@ ul#log1 {
     padding: 0;
 }
 
+#k1 #nani {
+    float: right;
+    line-height: 1;
+    font-size: 28px;
+    margin-right: 150px;
+    transition: 1s;
+    margin-top: 5px;
+    background-color: red;
+    width: 30px;
+    height:30px;
+    text-align:center;
+    color: green;
+}
+
+/* #k1 #nani:hover{
+    transform: scale(1.2);
+} */
+
+#k1 #nani:hover #k2{
+    display: inline-block
+}
+
+div#k1 {
+    border-bottom: dotted 2px white;
+    margin-left: -20px;
+    height: 45px;
+}
+
+div#k2 {
+    float:left;
+    display: none;
+    margin-left: 30px;
+    margin-top: -28px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 25px;
+    
+}
+
 form {
     width: 500px;
 }
@@ -274,14 +319,35 @@ form {
     color: #0064dc;
 }
 
+#conte #tit2 a h1 {
+    font-size: 60px;
+}
+
+
+#conte #tit2 a {
+    text-decoration: none;
+    /* font-size: 100px; */
+    color: #0064dc;
+}
+
+#tit2 {
+    width: 100%;
+    background: #c7c7c7;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 2.5%;
+    height: 200px;
+}
+
 #tit {
     width: 100%;
     background: #c7c7c7;
     margin-top: 60px;
     margin-bottom: 80px;
-    height: 220px;
     text-align: center;
     padding-top: 2.5%;
+    height: 200px;
 }
 
 #size {
